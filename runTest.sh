@@ -1,2 +1,2 @@
-sudo mv contract-testing/InventoryPactIT.java contract-testing/start/inventory/src/test/java/io/openliberty/guides/inventory/InventoryPactIT.java
-sudo mv contract-testing/pom.xml contract-testing/start/inventory/pom.xml
+sudo mv InventoryPactIT.java start/inventory/src/test/java/io/openliberty/guides/inventory/InventoryPactIT.java
+sudo mv pom.xml start/inventory/pom.xml
