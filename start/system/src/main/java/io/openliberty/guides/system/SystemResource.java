@@ -62,7 +62,7 @@ public class SystemResource {
   @Produces(MediaType.APPLICATION_JSON)
   public JsonObject getVersion() {
     JsonObject response = Json.createObjectBuilder()
-                              .add("system.properties.version", "1.1")
+                              .add("system.properties.version", "")
                               .build();
     return response;
   }
