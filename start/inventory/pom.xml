@@ -34,11 +34,6 @@
         </dependency>
         <!-- For tests -->
         <dependency>
-            <groupId>au.com.dius</groupId>
-            <artifactId>pact-jvm-consumer-junit</artifactId>
-            <version>4.0.10</version>
-        </dependency>
-        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.33</version>
@@ -54,29 +49,6 @@
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
-            <plugin>
-                <groupId>au.com.dius.pact.provider</groupId>
-                <artifactId>maven</artifactId>
-                <version>4.3.4</version>
-                <configuration>
-                    <serviceProviders>
-                        <serviceProvider>
-                            <name>System</name>
-                            <protocol>http</protocol>
-                            <host>localhost</host>
-                            <port>9080</port>
-                            <path>/</path>
-                            <pactFileDirectory>target/pacts</pactFileDirectory>
-                        </serviceProvider>
-                    </serviceProviders>
-                    <projectVersion>${project.version}</projectVersion>
-                    <skipPactPublish>false</skipPactPublish>
-                    <pactBrokerUrl>http://localhost:9292</pactBrokerUrl>
-                    <tags>
-                        <tag>open-liberty-pact</tag>
-                    </tags>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
