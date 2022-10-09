@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.openliberty.guides</groupId>
-    <artifactId>guide-contract-testing-inventory</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>contract-testing-inventory</artifactId>
+    <version>1.0</version>
     <packaging>war</packaging>
 
     <properties>
@@ -65,7 +65,7 @@
                             <protocol>http</protocol>
                             <host>localhost</host>
                             <port>9081</port>
-                            <path>/</path>
+                            <path>start/inventory/</path>
                             <pactFileDirectory>target/pacts</pactFileDirectory>
                         </serviceProvider>
                     </serviceProviders>
