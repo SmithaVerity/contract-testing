@@ -65,15 +65,6 @@
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <systemPropertyVariables>
-                        <pact.rootDir>target/pacts</pact.rootDir>
-                    </systemPropertyVariables>
-                </configuration>
-            </plugin>
             <!-- Enable liberty-maven plugin -->
             <plugin>
                 <groupId>io.openliberty.tools</groupId>
